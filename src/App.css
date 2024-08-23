@@ -187,6 +187,30 @@ input {
   box-shadow: -1px 1px 3px #0004;
 }
 
+.envio-container {
+  width: 100%;
+  background-color: white;
+}
+
+.envio-container div {
+  width: 100%;
+}
+
+.envio-container div:nth-child(1) span {
+  margin-right: 20px;
+}
+
+.envio-container div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.envio-container div:nth-child(2) input {
+  width: 15px;
+  height: 15px;
+}
+
 .order-amount-container {
   width: 100%;
   height: 200px;

@@ -148,6 +148,27 @@ function App() {
           }
         </table>
         </div>
+        <div className='envio-container'>
+          <div>
+            <span>Método de envío</span>
+            <select name="metodo-de-envio" id="">
+              <option value="precio fijo">Precio fijo</option>
+              <option value="envio gratuito">Envío gratuito</option>
+              <option value="recogida local">Recogida local</option>
+              <option value="otro">Otro</option>
+            </select>
+            <input type="text" />
+          </div>
+          <div>
+            <span>Imponible</span>
+            <input type="checkbox" name="" id="" />
+            <select name="imponible" id="">
+              <option value="estandar">Estándar</option>
+              <option value="tasa cero">Tasa reducida</option>
+              <option value="tasa reducida">Tasa reducida</option>
+            </select>
+          </div>
+        </div>
         <div className='order-amount-container'>
           <div className='order-sub-amount'>
             <h3>Sub total</h3> <span>${productsCart.reduce((acumulator,product) => { return acumulator + (product.price * product.quantity)},0).toFixed(2)}</span>
